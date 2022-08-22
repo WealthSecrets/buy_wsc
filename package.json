@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "install-dist": "cp -rv dist/ node_modules/@pancakeswap/uikit/", 
+    "start": "yarn install-dist && react-scripts start",
+    "build": "yarn install-dist && react-scripts build",
     "test": "react-scripts test --testPathIgnorePatterns=/src/__tests__/config/",
     "test:config": "react-scripts test --testPathPattern=/src/__tests__/config/",
     "integration-test": "start-server-and-test 'serve -s build -p 3000' http://localhost:3000 'cypress run'",
