@@ -1,5 +1,5 @@
 // 15 day, 30 days, 60 days
-const DAYS_TO_CALCULATE_AGAINST = [15, 30, 60]
+const DAYS_TO_CALCULATE_AGAINST = [69, 90, 180]
 
 /**
  *
